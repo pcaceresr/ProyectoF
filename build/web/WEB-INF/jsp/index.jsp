@@ -5,10 +5,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <title>Welcome to Spring Web MVC project</title>
     </head>
 
     <body>
+        
+           <div  class="container" class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <a  href="index.htm" class="btn btn-primary">Inicio</a>
+            <a href="nosotros.htm" class="btn btn-warning">¿Quienes somo?</a>
+            <a  href="contacto.htm"a class="btn btn-success">Contacto</a>
+           </div><br>
+        
+        <div class="container mt-1 ">
         <p>Hola, bienvenidos a la asignatura de Framework de soluciones empresariales</p>
         <p>A continuación te presentamos el contenido de la asignatura:<br><br>
             
@@ -44,5 +53,6 @@
             -Crear un mantenedor en un framework.<br> 
 
         </p>
+        </div>
     </body>
 </html>
