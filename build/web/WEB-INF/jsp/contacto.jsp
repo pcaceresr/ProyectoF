@@ -11,17 +11,19 @@
 
     <body>
 
-          <div  class="container" class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <div  class="container" class="btn-group" role="group" aria-label="Basic mixed styles example">
             <a  href="index.htm" class="btn btn-primary">Inicio</a>
-            <a href="nosotros.htm" class="btn btn-warning">¿Quienes somo?</a>
-            <a  href="contacto.htm"a class="btn btn-success">Contacto</a>
-           </div><br>
+            <a  href="nosotros.htm" class="btn btn-success">¿Quienes somos?</a>
+            <a  href="contacto.htm"a class="btn btn-info">Contacto</a>
+            <a  href="tienda.htm"a class="btn btn-warning">Tienda</a>
+            <a  href="agregar.htm"a class="btn btn-link">Agregar producto</a>
+        </div><br>
 
         <form  method="post">
-            
-           
+
+
             <div class="container">
-                <label for="contactanos">Contáctanos</label><br>
+                <h4>CONTÁCTANOS</h4><br>
                 <label for="contactanos">Déjanos tus datos y nosotros te contactaremos</label>
             </div>
 
@@ -29,29 +31,41 @@
 
         <form th:object="${form}"  method="post" >
             <div class="container">
-                <label for="nombre">Nombre</label>
-                <input th:field="*{nombre}" id="nombre" placeholder="Escribe tu nombre" type="text"
+                <label for="nombre">NOMBRE</label>
+                <input th:field="*{nombre}" id="nombre" placeholder="Ingrese su nombre" type="text"
                        class="form-control">
             </div>
             <div class="container">
-                <label for="apellido">Apellido</label>
-                <input th:field="*{apellido}" id="codigo" placeholder="Escribe tu apellido" type="text"
+                <label for="apellido">APELLIDO</label>
+                <input th:field="*{apellido}" id="codigo" placeholder="Ingrese su apellido" type="text"
                        class="form-control">
             </div>
             <div class="container">
-                <label for="existencia">Correo electrónico</label>
-                <input th:field="*{correo}" id="correo" placeholder="Ingresa tu correo electrónico" type="text"
+                <label for="existencia">CORREO ELECTRÓNICO</label>
+                <input th:field="*{correo}" id="correo" placeholder="Ingrese su correo electrónico" type="text"
                        class="form-control">
             </div>
             <div class="container">
-                <label for="telefono">Teléfono</label>
-                <input th:field="*{telefono}" id="precio" placeholder="Ingresa tu númerp de telefono" type="number"
+                <label for="telefono">TELÉFONO</label>
+                <input th:field="*{telefono}" id="precio" placeholder="Ingrese su número de teléfono" type="number"
                        class="form-control">
             </div ><br>
             <div class="container">
-                <button class="btn btn-success" type="submit">Enviar</button>
+                <button class="btn btn-success" type="submit">ENVIAR</button>
             </div >
         </form>
+        <!--
+        <div class="container">
+            <img src="${pageContext.request.contextPath}/static/img/mapa.png" alt="Descripción de la imagen" />
+        </div >
+        -->
+
+        <div class="container">
+            <br> <br>
+            <label>Dirección: Modeda 131, Dantiago centro</label><br>
+            <label>Telefono: +56965423345</label><br>
+            <label>Correo: contacto@contacto.cl</label>
+        </div>
 
     </body>
 </html>
