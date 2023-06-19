@@ -10,14 +10,15 @@
     </head>
 
     <body>
-
+       <div class="card body">
         <div  class="container" class="btn-group" role="group" aria-label="Basic mixed styles example">
             <a  href="index.htm" class="btn btn-primary">Inicio</a>
-            <a  href="nosotros.htm" class="btn btn-success">¿Quienes somos?</a>
+            <a href="nosotros.htm" class="btn btn-success">¿Quienes somos?</a>
             <a  href="contacto.htm"a class="btn btn-info">Contacto</a>
             <a  href="tienda.htm"a class="btn btn-warning">Tienda</a>
-            <a  href="agregar.htm"a class="btn btn-link">Agregar producto</a>
+            <a  href="agregar.htm"a class="btn btn-link">Agregar producto</a> 
         </div><br>
+        </div>
 
         <form  method="post">
 
@@ -29,25 +30,21 @@
 
                     <form th:object="${form}"  method="post" >
 
-                        <div class="container">
-                            <label for="codigo">CÓDIGO</label>
-                            <input th:field="*{codigo}" id="codigo" placeholder="Código del producto" type="number"
-                                   class="form-control">
                         </div>
                         <div class="container">
                             <label for="nombre">NOMBRE</label>
-                            <input th:field="*{nombre}" id="nombre" placeholder="Nombre del producto" type="text"
+                            <input th:field="*{nombre}"  name="strNombre" id="nombre" placeholder="Nombre del producto" type="text"
                                    class="form-control">
                         </div>
 
                         <div class="container">
                             <label for="precio">PRECIO</label>
-                            <input th:field="*{precio}" id="correo" placeholder="Precio del producto" type="number"
+                            <input th:field="*{precio}"  name="intPrecio" id="correo" placeholder="Precio del producto" type="number"
                                    class="form-control">
                         </div>
                         <div class="container">
                             <label for="descripcion">DESCRIPCIÓN</label>
-                            <input th:field="*{descripcion}" id="precio" placeholder="Descripción del producto" type="text"
+                            <input th:field="*{descripcion}"  name="strDescripcion" id="precio" placeholder="Descripción del producto" type="text"
                                    class="form-control">
                         </div ><br>
                         <div class="container">

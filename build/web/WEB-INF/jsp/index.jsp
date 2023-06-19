@@ -11,13 +11,15 @@
 
     <body>
         
-           <div  class="container" class="btn-group" role="group" aria-label="Basic mixed styles example">
+         <div class="card body">
+        <div  class="container" class="btn-group" role="group" aria-label="Basic mixed styles example">
             <a  href="index.htm" class="btn btn-primary">Inicio</a>
             <a href="nosotros.htm" class="btn btn-success">¿Quienes somos?</a>
             <a  href="contacto.htm"a class="btn btn-info">Contacto</a>
             <a  href="tienda.htm"a class="btn btn-warning">Tienda</a>
-            <a  href="agregar.htm"a class="btn btn-link">Agregar producto</a>
-           </div><br>
+            <a  href="agregar.htm"a class="btn btn-link">Agregar producto</a> 
+        </div><br>
+        </div>
         
         <div class="container mt-1 ">
             <h5>Hola, bienvenidos a la asignatura de Framework de soluciones empresariales</h5><br>

@@ -11,7 +11,7 @@
     </head>
 
     <body>
-
+        <div class="card body">
         <div  class="container" class="btn-group" role="group" aria-label="Basic mixed styles example">
             <a  href="index.htm" class="btn btn-primary">Inicio</a>
             <a href="nosotros.htm" class="btn btn-success">¿Quienes somos?</a>
@@ -19,19 +19,21 @@
             <a  href="tienda.htm"a class="btn btn-warning">Tienda</a>
             <a  href="agregar.htm"a class="btn btn-link">Agregar producto</a> 
         </div><br>
+        </div>
 
         <div class="container mt-4 ">
-            <div CLASS="card border-info">
+            <div>
                 <h4>PRODUCTOS DISPONIBLES</h4><br>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>CODIGO</th>
-                            <th>NOMBRE</th>
-                            <th>PRECIO</th>
-                            <th>DESCRIPCION</th>
-                        </tr>
-                    </thead>
+                <div class="card body">
+                    <table class="table" table-hover>
+                        <thead>
+                            <tr>
+                                <th>CODIGO</th>
+                                <th>NOMBRE</th>
+                                <th>PRECIO</th>
+                                <th>DESCRIPCION</th>
+                            </tr>
+                        </thead>
                     <tbody>
                         <c:forEach var="dato" items="${lista}">
                             <tr>
@@ -40,13 +42,14 @@
                                 <td>${dato.precio}</td>
                                 <td>${dato.descripcion}</td>
                                 <th>
-                                    <a>EDITAR</a>
-                                    <a>ELIMINAR</a>
+                                    <a class="btn btn-warning">EDITAR</a>
+                                    <a class="btn btn-danger">ELIMINAR</a>
                                 </th>
                             </tr>
                         </c:forEach>
                     </tbody>
                 </table>
+                </div>
             </div>
         </div>
     </body>
