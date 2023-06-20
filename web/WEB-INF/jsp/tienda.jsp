@@ -42,7 +42,7 @@
                                 <td>${dato.precio}</td>
                                 <td>${dato.descripcion}</td>
                                 <th>
-                                    <a class="btn btn-warning">EDITAR</a>
+                                    <a href="editar.htm?id=${dato.id_producto}" class="btn btn-warning">EDITAR</a>
                                     <a class="btn btn-danger">ELIMINAR</a>
                                 </th>
                             </tr>

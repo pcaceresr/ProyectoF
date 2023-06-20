@@ -56,12 +56,14 @@
                 <button class="btn btn-success" type="submit">ENVIAR</button>
             </div >
         </form>
-        <!--
+        
         <div class="container">
-            <img src="${pageContext.request.contextPath}/static/img/mapa.png" alt="Descripción de la imagen" />
+            <br>
+            <img src="https://cdn.shopify.com/s/files/1/0343/4348/5485/products/Captura-de-pantalla-2018-05-15-a-las-10.17.52-a.m._599x.png?v=1582815143"/>
+             <!--<img th:src="@{/images/mapa.png}" id="imagen" class="img-circle"/>
+                -->
         </div >
-        -->
-
+        
         <div class="container">
             <br> <br>
             <label>Dirección: Modeda 131, Dantiago centro</label><br>
