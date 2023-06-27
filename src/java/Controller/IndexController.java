@@ -5,6 +5,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.jdbc.core.JdbcTemplate;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.request;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -14,7 +15,7 @@ public class IndexController {
     ModelAndView objModelAndView = new ModelAndView();
     JdbcTemplate jbdcTemplate = new JdbcTemplate(conexion.conectar());
     int intID;
-     List listaDatos;
+    List listaDatos;
     
     @RequestMapping("index.htm")
     public ModelAndView index() {
@@ -72,6 +73,14 @@ public class IndexController {
         String strSQL = "UPDATE tbl_producto SET nombre = ?, precio = ?, descripcion = ? WHERE id_producto = " + intID;
         this.jbdcTemplate.update(strSQL, producto.getStrNombre(), producto.getIntPrecio(), producto.getStrDescripcion());
         return new ModelAndView("redirect:/tienda.htm");
-    }   
-        
+    }
+
+    @RequestMapping(value = "eliminar.htm")
+    public ModelAndView eliminar(HttpServletRequest request) {
+        intID = Integer.parseInt(request.getParameter("id"));
+        String strSQL = "DELETE FROM tbl_producto WHERE id_producto = " + intID;
+        this.jbdcTemplate.update(strSQL);
+        return new ModelAndView("redirect:/tienda.htm");
+    }
+
 }

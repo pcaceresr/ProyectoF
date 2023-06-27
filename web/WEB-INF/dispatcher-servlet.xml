@@ -29,6 +29,7 @@
                 <prop key="tienda.htm">indexController</prop>
                 <prop key="agregar.htm">indexController</prop>
                 <prop key="editar.htm">indexController</prop>
+                <prop key="eliminar.htm">indexController</prop>
             </props>
         </property>
     </bean>

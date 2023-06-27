@@ -21,9 +21,9 @@
         </div><br>
         </div>
         
-        <div class="container mt-1 ">
-            <h5>Hola, bienvenidos a la asignatura de Framework de soluciones empresariales</h5><br>
-        <p>A continuación te presentamos el contenido de la asignatura:<br><br>
+        <div class="container mt-1 "><br>
+            <h4>Hola, bienvenidos a la asignatura de Framework de soluciones empresariales</h4><br>
+        <p>A continuación presentamos el contenido de la asignatura:<br><br>
             
             • Unidad 1:
             Concepto de Java Web
